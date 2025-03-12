@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DodoDexAPP"
+        tools:targetApi="31">
+        <activity
+            android:name=".dinasour_information_main"
+            android:parentActivityName=".MainDodoDex"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".sign_up"
+            android:exported="false"
+            android:parentActivityName=".Login"
+            android:usesCleartextTraffic="true"
+            tools:targetApi="31"/>
+
+        <activity
+            android:name=".NewsMain"
+            android:parentActivityName=".InformationMain"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".museum_info_activity"
+            android:exported="false"
+            android:label="@string/title_activity_museum_info"
+            android:parentActivityName=".museum_view_activity"
+            android:theme="@style/Theme.DodoDexAPP" />
+        <activity
+            android:name=".museum_view_activity"
+            android:parentActivityName=".InformationMain"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".dino_found_activity"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".Searcher"
+            android:parentActivityName=".MainDodoDex"
+            android:exported="false">
+        </activity>
+
+
+        <activity
+            android:name=".era_options_activity"
+            android:parentActivityName=".MainDodoDex"
+            android:exported="false">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDycQMW9AGWJiG0kC7KRP-ucTbFjp06-mM" />
+
+        <activity
+            android:name=".Maps"
+            android:parentActivityName=".InformationMain"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".config"
+            android:parentActivityName=".MainDodoDex"
+            android:exported="false">
+        </activity>
+            
+        <activity android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".InformationMain"
+            android:parentActivityName=".MainDodoDex"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".MainDodoDex"
+            android:exported="false"/>
+        
+        <activity
+            android:name=".Favourites"
+            android:parentActivityName=".InformationMain"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".DatosPersonales"
+            android:parentActivityName=".MainDodoDex"
+            android:exported="false"/>
+        <activity
+            android:name=".EditarDatos"
+            android:parentActivityName=".config"
+            android:exported="false">
+        </activity>
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".config">
+
+    <Switch
+        android:id="@+id/dark_mode_config_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="25dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <android.widget.Button
+        android:id="@+id/edit_personal_data_config_activity"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_button"
+        android:text="Edit personal data"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="25dp"/>
+
+    <android.widget.Button
+        android:id="@+id/close_session_config_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:text="Close Session"
+        android:textColor="@color/green3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_personal_data_config_activity" />
+
+    <android.widget.Button
+        android:id="@+id/delete_account_config_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:text="Delete Account "
+        android:textColor="@color/green3"
+        app:layout_constraintStart_toEndOf="@id/close_session_config_activity"
+        app:layout_constraintTop_toBottomOf="@id/edit_personal_data_config_activity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

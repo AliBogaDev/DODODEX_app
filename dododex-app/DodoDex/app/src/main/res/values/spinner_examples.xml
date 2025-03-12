@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="epoch_examples">
+        <item>Triásico</item>
+        <item>Jurasico</item>
+        <item>Cretacico</item>
+    </string-array>
+
+    <string-array name="diet_examples">
+        <item>Hervivoro</item>
+        <item>Carnivoro</item>
+        <item>Omnivoro</item>
+    </string-array>
+
+    <string-array name="enviroment_examples">
+        <item>Tierra</item>
+        <item>Aire</item>
+        <item>Mar</item>
+    </string-array>
+</resources>

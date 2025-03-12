@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/all_dinosaur_pager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="30dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/image_Dinosaur"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:scaleType="centerInside"
+        android:src="@drawable/rex"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/name_Dinosaur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="Rex"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/green"
+        android:layout_marginTop="20dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/heigth_Dinosaur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/Altura"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Altura"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/habitad_Dinosaur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/Habitad"
+        android:gravity="start"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+         />
+
+    <TextView
+        android:id="@+id/habitad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/Habitad"
+ />
+
+    <TextView
+        android:id="@+id/weight_Dinosaur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/Peso"
+        android:gravity="start"
+        android:layout_gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+         />
+    <TextView
+        android:id="@+id/peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Peso"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/feeding_Dinosaur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="start"
+        android:text="@string/Alimentación"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/alimentacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Alimentación"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/descriptionText_Dinosaur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/Decripcion"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/information_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/TextoDesc" />
+
+    <ImageButton
+        android:id="@+id/botton_like_recicler"
+        android:layout_width="51dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_round"
+        android:scaleType="center"
+        android:layout_gravity="center"
+        android:src="@drawable/like_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/information_text" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
